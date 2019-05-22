@@ -1,16 +1,20 @@
 # FixIDAPython
 
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)  [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+
 修复IDA加载IDAPython时出现的错误。
 
 ## 错误描述
   - [找不到指定模块] 和 [can't load file]
     这是因为IDAPython会在PATH环境变量中搜索Python27.dll，如果没找到这个dll，那么就会出现这个错误。
+
 ![avatar](https://github.com/CCint3/FixIDAPython/blob/master/IDAPython_Error01.png?raw=true)
 
   - [IDAPython: importing "site" failed]
     这是因为在注册表中找不到Python的注册表项。
+
 ![avatar](https://github.com/CCint3/FixIDAPython/blob/master/IDAPython_Error02.png?raw=true)
+
 ![avatar](https://github.com/CCint3/FixIDAPython/blob/master/IDAPython_Error03.png?raw=true)
 
 ## 解决方案
